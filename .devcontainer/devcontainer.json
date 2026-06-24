@@ -1,0 +1,31 @@
+{
+  "name": "rise-sandbox",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+  },
+  "customizations": {
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
+      },
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "mhutchie.git-graph",
+        "ms-python.python"
+      ]
+    }
+  },
+  "remoteEnv": {
+    // Attempt to fix Pylance crashes that seem to be caused by running out of memory.
+    "NODE_OPTIONS": "--max-old-space-size=8192"
+  }
+}
