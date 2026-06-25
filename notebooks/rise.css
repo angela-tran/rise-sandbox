@@ -1,0 +1,24 @@
+.reveal .slides > section > section {
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.jp-MarkdownOutput {
+    font-size: 1.75rem;
+}
+
+.jp-ThemedContainer .jp-RenderedHTMLCommon pre code {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #eaf1fc;
+    border-radius: 30px;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
+    background: none;
+}
